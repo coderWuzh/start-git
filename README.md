@@ -129,10 +129,17 @@ cd existing_git_repo
 git remote add gitee https://gitee.com/wu_zhenhua/gitdemo.git
 
 git push -u gitee main
-
 ```
 
+远程仓库操作的命令
 
+```bash
+git remote #列出当前关联的远程库
+git remote -v #列出更详细的当前关联的远程库
+git remote add <远程库名> <url> #关联远程仓库
+git remote remove <远程库名> #删除远程仓库
+git push -u <远程库名> <分支名> #向远程库推送代码，并和当前分支关联
+```
 
 
 
