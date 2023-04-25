@@ -164,9 +164,15 @@ git pull #从服务器上拉取代码，并且自动合并
 
   ```bash
   git tag
-  git tag <版本>
-  git tag <版本> <提交日志id>
+  git tag <标签名>
+  git tag <标签名> <提交日志id>
+  git push origin <标签名> #推送标签，会在tags中显示版本
+  git push origin --tags #推送所有标签
+  git tag -d <标签名> #删除标签
+  git push origin --delete <标签名> #删除远程标签
   ```
 
-  
+#### gitignore
+
+默认情况下，git会监视项目中的所有内容，但是有些内容比如ndoe_modules中的内容，我们不希望他被git管理。我们可以在项目目录中添加一个`.gitignore`文件，来设置那些需要被忽略的文件。
 
