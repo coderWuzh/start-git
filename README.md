@@ -176,3 +176,19 @@ git pull #从服务器上拉取代码，并且自动合并
 
 默认情况下，git会监视项目中的所有内容，但是有些内容比如ndoe_modules中的内容，我们不希望他被git管理。我们可以在项目目录中添加一个`.gitignore`文件，来设置那些需要被忽略的文件。
 
+#### github的静态页面
+
+- 在github中，可以将自己的静态页面直接部署到github中，它会提高一个地址使得我们的页面编程一个真正的网站，可以供用户访问。
+
+- 要求：
+
+  - 静态页面的分支必须叫做：gh-pages
+
+  - 如果希望页面可以通过xxx.github.io访问，则需要将库的名字配置为xxx.github.io
+
+    ```bash
+    git branch -M gh-pages
+    git push -u origin gh-pages
+    ```
+
+    
